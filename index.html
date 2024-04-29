@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/logo.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>Engineers community</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="images/icon/logo.png" alt="logo"></div>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="upload.html">UPLOAD</a>
+			<a class="get-started" href="login.html">LOGIN/SIGNUP</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>The beautiful thing about learning is that nobody can take it away from you</p>
+				<h5>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research!</h5>
+			</div>
+			<div class="svg-image">
+				<img src="images/extra/svg1.jpg" alt="svg">
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+			<ul>
+				<li><a href="#about_section">About</a></li>
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+				<li><a href="#feedBACK">Feedback</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+<!-- Some Popular Subjects -->
+<div class="title">
+	<span>Information Technology</span>
+</div>
+<br><br>
+<div class="course">
+	<center><div class="cbox">
+	<div class="det"><a href="D:\Engineers_community\ENGINEERS_Community-main\samplePapers\CLOUD COMPUTING DIGITAL NOTES (R18A0523).pdf"><img src="images/courses/book.png">Cloud Technologies</a></div>
+	<div class="det"><a href="https://www.lkouniv.ac.in/site/writereaddata/siteContent/202003291621085101sanjeev_rdbms_unit-I_sql_bba_ms_4_sem.pdf"><img src="images/courses/d1.png">Sql</a></div>
+	<div class="det"><a href="https://home.iitk.ac.in/~arlal/book/mth202.pdf"><img src="images/courses/paper.png">Discrete Mathematics</a></div>
+	<div class="det"><a href="https://mrcet.com/downloads/digital_notes/CSE/III%20Year/COMPUTER%20NETWORKS%20NOTES.pdf"><img src="images/courses/d1.png">Computer Networks</a></div>
+	</div></center>
+	
+	<div class="title">
+		<span>Electronics and Communication Engineering</span>
+	</div>
+	<br><br>
+	<div class="cbox">
+	<div class="det"><a href="samplePapers\Introduction_to_Basic_ElectronicsW.ppt"><img src="images/courses/computer.png">Basic electronics</a></div>
+	<div class="det"><a href="https://www.tutorialspoint.com/microprocessor/index.htm"><img src="images/courses/data.png">Microprocess</a></div>
+	<div class="det"><a href="https://youtu.be/s8rsR_TStaA?feature=shared"><img src="images/courses/algo.png">Signals and Systems</a></div>
+	<div class="det det-last"><a href="https://mrcet.com/downloads/digital_notes/EEE/13092021/ELECTRICAL%20CIRCUIT%20ANALYSIS.pdf"><img src="images/courses/projects.png">Circuit analysis</a></div>
+	</div>
+</div>
+
+	
+<!-- ABOUT -->
+	<div class="diffSection" id="about_section">
+		<center><p style="font-size: 50px; padding: 100px">About</p></center>
+		<div class="about-content">
+				<div class="side-image">
+					<img class="sideImage" src="images/extra/e3.jpg">
+				</div>
+				<div class="side-text">
+					<h2>What you think about us ?</h2>
+					<p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and directed research.<br> Educational website can include websites that have games, videos or topic related resources that act as tools to enhance learning and supplement classroom teaching. These websites help make the process of learning entertaining and attractive to the student, especially in today's age. <br>Using HTML(HyperText Markup Language), CSS(Cascading Style Sheet), JavaScript, we can make learning more easier and in a interesting way.</p>
+				</div>
+		</div>
+	</div>
+
+<!-- TEAM -->
+	<div class="diffSection" id="team_section">
+		<center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">We're the Creators</p></center>
+		<div class="totalcard">
+			<div class="card">
+				<center><img src="images/creator/HAR.jpeg"></center>
+				<center><div class="card-title">Hariharan S</div>
+				<div id="detail">
+					<p>"Naalai naalai naalai endru indrai ilakaadhe"</p>
+
+				</div>
+				</center>
+			</div>
+			<div class="card">
+				<center><img src="images/creator/Sudhan.jpeg"></center>
+				<center><div class="card-title">Harihara Sudhan R</div>
+				<div id="detail">
+					<p>"When you Love something set it free, if it comes back,it is yours. If it doesn't, it never was"</p>
+				</div>
+				</center>
+			</div>
+			<div class="card">
+				<center><img src="images/creator/DEE.jpeg"></center>
+				<center><div class="card-title">Deepasri KR</div>
+				<div id="detail">
+					<p>“ Real education should consist of drawing the goodness and the best out of our own students. What better books can there be than the book of humanity “</p>
+				</div>
+				</center>
+			</div>
+			<div class="card">
+				<center><img src="images/creator/JR.jpeg"></center>
+				<center><div class="card-title">Jothi Raghava E</div>
+				<div id="detail">
+					<p>“What better books can there be than the book of humanity “</p>
+				</div>
+				</center>
+			</div>
+			<div class="card">
+				<center><img src="images/creator/MIT.jpeg"></center>
+				<center><div class="card-title">Mithun K</div>
+				<div id="detail">
+					<p>“ Real education should consist of drawing the goodness and the best out of our own students. What better books can there be than the book of humanity “</p>
+					</div>
+				</center>
+			</div>
+		</div>
+	</div>
+
+
+<!-- SERVICES -->
+	<div class="service-swipe">
+		<div class="diffSection" id="services_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p></center>
+		</div>
+		<a href="subjects/computer_courses.html"><div class="s-card"><img src="images/icon/computer-courses.png"><p>Free Online Computer Courses</p></div></a>
+		<a href="subjects/jee.html"><div class="s-card"><img src="images/icon/brainbooster.png"><p>Building Concepts for Competitive Exams</p></div></a>
+		<a href="#"><div class="s-card"><img src="images/icon/online-tutorials.png"><p>Online Video Lectures</p></div></a>
+		<a href="subjects/jee.html#sample_papers"><div class="s-card"><img src="images/icon/papers.jpg"><p>Sample Papers of Various Competitive Exams</p></div></a>
+		<a href="#"><div class="s-card"><img src="images/icon/p3.png"><p>Performance and Ranking Report</p></div></a>
+		<a href="#contactus_section"><div class="s-card"><img src="images/icon/discussion.png"><p>Discussion with Our Tutors & Mentors</p></div></a>
+		<a href="subjects/quiz.html"><div class="s-card"><img src="images/icon/q1.png"><p>Daily Brain Teasing Questions to Improve IQ</p></div></a>
+		<a href="#contactus_section"><div class="s-card"><img src="images/icon/help.png"><p>24x7 Online Support</p></div></a>
+	</div>
+
+<!-- FEEDBACK -->
+	<div class="diffSection" id="contactus_section">
+		<center><p style="font-size: 50px; padding: 100px">For Feedback</p></center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+			<form action="mailto:@gmail.com" method="post" enctype="text/plain">
+				<label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name <span class="imp">*</span></label><br>
+				<center>
+				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+				</center>
+				<label>Email <span class="imp">*</span></label><br>
+				<input type="email" name="mail" style="width: 100%" required="required"><br>
+				<label>Message <span class="imp">*</span></label><br>
+				<input type="text" name="message" style="width: 100%" required="required"><br>
+				<label>Additional Details</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Send Message</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="images/icon/logo.png" style="width: 200px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+					<a href="#"><img src="images/icon\ytube.png"></a>
+					<a href="#"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2024 Created By Hariharan & Team All Rights Reserved.</p>
+				<br><p><img src="images/icon/location.png">Sona College of Technology<br>Salem-636014</p><br>
+				<p><img src="images/icon/phone.png"> (+91) 12345 67890<br><img src="images/icon/mail.png">&nbsp; engineerscommunity@gmail.com</p>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
